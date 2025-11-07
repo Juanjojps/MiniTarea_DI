@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/icons">
+    <file>assets/paco.png</file>
+    <file>assets/Peppa.png</file>
+  </qresource>
+</RCC>
