@@ -40,12 +40,8 @@ def main() -> int:
     except Exception as e:
         print("Warning: algún botón no se pudo conectar:", e)
     
-    # Verificar que el icono está disponible
-    from PySide6.QtGui import QIcon
-    icon = QIcon(":/icons/assets/Peppa.png")
-    print("ICON_IS_NULL:", icon.isNull())
-    if not icon.isNull():
-        w.setWindowIcon(icon)  # Forzar el icono en la ventana principal
+    # Establecer mensaje en la barra de estado
+    w.statusBar().showMessage("Listo")
     
     # Mostrar ventana principal y ejecutar la aplicación
     w.show()
